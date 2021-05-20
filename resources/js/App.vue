@@ -4,16 +4,24 @@
       <side-navigation />
     </v-navigation-drawer>
 
-    <v-app-bar app class="indigo darken-2 white--text">
-      <v-app-bar-nav-icon
-        @click="drawer = !drawer"
-        class="yellow--text"
-      ></v-app-bar-nav-icon>
+    <v-app-bar app class="">
+      <v-app-bar-nav-icon @click="drawer = !drawer" class="orange--text">
+      </v-app-bar-nav-icon>
 
       <v-toolbar-title>Application</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon class="orange--text">mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon class="orange--text">mdi-magnify</v-icon>
+      </v-btn>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="">
       <router-view></router-view>
     </v-main>
   </v-app>
