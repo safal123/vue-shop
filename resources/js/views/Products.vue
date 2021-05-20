@@ -1,6 +1,8 @@
 <template>
   <div class="pa-4">
-    <div class="text-right mb-4">
+    <div class="d-flex align-center mb-4 orange lighten-2 pa-2 border">
+      <h3 class="white--text">All Products</h3>
+      <v-spacer></v-spacer>
       <add-product></add-product>
     </div>
     <v-data-table
@@ -18,7 +20,7 @@
           max-width="100"
           :src="item.image_url"
           alt="item.name"
-          contain="false"
+          contains
         ></v-img>
       </template>
       <template v-slot:item.actions="{ item }">
@@ -93,3 +95,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+div.border {
+  border-bottom: 5px solid rgb(95, 88, 86);
+}
+</style>
