@@ -1,9 +1,11 @@
 <template>
   <div class="pa-4">
-    <div class="d-flex align-center mb-4 orange lighten-2 pa-2 border">
-      <h3 class="white--text">All Products</h3>
-      <v-spacer></v-spacer>
-      <add-product></add-product>
+    <div class="border mb-2">
+      <div class="d-flex align-center orange pa-2">
+        <h3 class="white--text">All Products</h3>
+        <v-spacer></v-spacer>
+        <add-product></add-product>
+      </div>
     </div>
     <v-data-table
       tile
@@ -96,8 +98,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
-div.border {
-  border-bottom: 5px solid rgb(95, 88, 86);
+<style>
+.border {
+  border-bottom: 5px solid orangered;
 }
 </style>
